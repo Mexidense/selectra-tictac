@@ -1,0 +1,106 @@
+{
+  "id": "499ab22c-74ea-4797-ba9d-188ae87b824b",
+  "version": "2.0",
+  "name": "TictacStart",
+  "url": "https://admin.selectra.io/",
+  "tests": [{
+    "id": "9932b8f5-cbc6-4ce7-b037-38e0b7df7b16",
+    "name": "Start",
+    "commands": [{
+      "id": "a99f09b6-02dc-4100-8e3f-edf4673a930f",
+      "comment": "",
+      "command": "open",
+      "target": "https://sso.selectra.io/users/sign_in",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7fd3b560-fb8f-441d-97ba-e95c0acb4df1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "954x727",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e231ba79-a509-40b8-b5f9-c8b61371cd36",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_email",
+      "targets": [
+        ["id=user_email", "id"],
+        ["name=user[email]", "name"],
+        ["css=#user_email", "css:finder"],
+        ["xpath=//input[@id='user_email']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "SELECTRA_EMAIL"
+    }, {
+      "id": "e406613c-4c01-408f-93a9-a9f99498d652",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_password",
+      "targets": [
+        ["id=user_password", "id"],
+        ["name=user[password]", "name"],
+        ["css=#user_password", "css:finder"],
+        ["xpath=//input[@id='user_password']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "SELECTRA_PASSWORD"
+    }, {
+      "id": "03c94d18-8bc1-44b9-9a8f-102814c032a7",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.waves-button-input", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/div[3]/i/input", "xpath:idRelative"],
+        ["xpath=//i/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e38ac27-2fbf-4c9f-bad0-1dbec9c33bdb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Tictac",
+      "targets": [
+        ["linkText=Tictac", "linkText"],
+        ["css=a:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Tictac')]", "xpath:link"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/a[4]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://tictac.selectra.io')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Tictac')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "37d12468-fc78-441f-ab6a-45b0f7ef126c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Empezar",
+      "targets": [
+        ["linkText=Empezar", "linkText"],
+        ["css=.btn-lg", "css:finder"],
+        ["xpath=//a[contains(text(),'Empezar')]", "xpath:link"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/events?event%5Bevent_type%5D=start')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Empezar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "51d03075-468a-4b2a-9099-5f52189f8492",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9932b8f5-cbc6-4ce7-b037-38e0b7df7b16"]
+  }],
+  "urls": [],
+  "plugins": []
+}

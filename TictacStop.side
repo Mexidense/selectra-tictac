@@ -1,0 +1,119 @@
+{
+  "id": "0a132e22-1cf2-4795-a860-3a8b98e7319b",
+  "version": "2.0",
+  "name": "TictacStop",
+  "url": "https://admin.selectra.io/",
+  "tests": [{
+    "id": "9eb6eaee-4661-4ddd-a953-8410cf9327ec",
+    "name": "Stop",
+    "commands": [{
+      "id": "958d183c-88ef-46a3-b80b-2dbf1ec771e8",
+      "comment": "",
+      "command": "open",
+      "target": "https://sso.selectra.io/users/sign_in",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5eca1245-5632-4eaf-836c-222fcd55bf60",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "954x727",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ad0eabb1-e6d0-4652-94e2-767bf95be049",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_password",
+      "targets": [
+        ["id=user_password", "id"],
+        ["name=user[password]", "name"],
+        ["css=#user_password", "css:finder"],
+        ["xpath=//input[@id='user_password']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "SELECTRA_PASSWORD"
+    }, {
+      "id": "725f2e58-dd53-4532-9cb8-37030f86658c",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_email",
+      "targets": [
+        ["id=user_email", "id"],
+        ["name=user[email]", "name"],
+        ["css=#user_email", "css:finder"],
+        ["xpath=//input[@id='user_email']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "SELECTRA_EMAIL"
+    }, {
+      "id": "a0730b65-a377-469c-a392-70f7f852b5c7",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.waves-button-input", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/div[3]/i/input", "xpath:idRelative"],
+        ["xpath=//i/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0156464-3df4-4671-baa2-a3289b03e1fc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Tictac",
+      "targets": [
+        ["linkText=Tictac", "linkText"],
+        ["css=a:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Tictac')]", "xpath:link"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/a[4]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://tictac.selectra.io')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Tictac')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5011b883-7ac6-4652-8f54-49cb0d6a7654",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Parar",
+      "targets": [
+        ["linkText=Parar", "linkText"],
+        ["css=.btn-selectra-red", "css:finder"],
+        ["xpath=//a[contains(text(),'Parar')]", "xpath:link"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/events?event%5Bevent_type%5D=stop')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Parar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d693de37-1c5d-46f1-805e-1621c5288239",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Salir",
+      "targets": [
+        ["linkText=Salir", "linkText"],
+        ["css=.navbar-top-links a", "css:finder"],
+        ["xpath=//div[@id='page-wrapper']/div/nav/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/selectra_auth/oauth/sign_out')]", "xpath:href"],
+        ["xpath=//nav/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1485042d-16f4-4532-ad26-63cb87104511",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9eb6eaee-4661-4ddd-a953-8410cf9327ec"]
+  }],
+  "urls": [],
+  "plugins": []
+}
