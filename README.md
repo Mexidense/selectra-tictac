@@ -1,7 +1,8 @@
 # Selectra Tictac script
 
 ## Requirements
-- NodeJS and NPM
+- nodeJS >= 8
+- npm (typically gets installed with node)
 - `npm install -g selenium-side-runner`
 
 - Browser driver
@@ -16,3 +17,6 @@ For run Tictac:
 
 For stop Tictac:
 `selenium-side-runner TictacStop.side`
+
+
+Source: https://www.seleniumhq.org/selenium-ide/docs/en/introduction/command-line-runner
